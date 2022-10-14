@@ -1,0 +1,235 @@
+/* backdrop */
+
+.backdrop{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: scale 5000ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 250ms;
+}
+
+.modal{
+	position: fixed;
+	width: 530px;
+	height: 580px;	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1);
+	background: #FFFFFF;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 	}
+
+.is-hidden{
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.no-scroll{
+	overflow: hidden;
+}
+
+.backdrop.is-hidden .modal{
+	transform: translate(-50%, -50%) scale(0.5);
+	}
+
+.close-button{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 30px;
+	height: 30px;
+	outline: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	background-color: var(--four-text-color);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 250ms;
+}
+
+.close-button:hover,
+.close-button:focus{
+	background-color: var(--second-text-color);
+}
+
+.modal-title{
+	margin-top: 40px;
+	justify-content: center;
+	display: flex;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+}
+
+.form-item{
+	margin-top: 10px;
+	margin-left: 40px;
+	margin-right: 40px;
+	max-width: inherit;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-item input{
+	box-sizing:border-box;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	width: 100%;
+	height: 40px;
+	border-radius: 4px;
+	padding-left: 42px;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea{
+	border: 0;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	width: 450px;
+	height: 120px;
+	box-sizing:border-box;
+	padding: 10px 15px;
+	resize: none;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-item textarea:focus{
+	border: 1px solid var(--second-text-color);
+}
+
+.input-wrap{
+	position: relative;
+}
+
+.form-item:focus-within svg{
+	fill:var(--second-text-color);
+}
+
+.form-item input:focus{
+	border: 1px solid var(--second-text-color);
+}
+
+.form-item label{
+	margin-bottom: 5px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.01em;
+}
+
+.form-item svg{
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-item:focus svg{
+	fill: var(--second-text-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 250ms;
+}
+
+.subscribe{
+	margin-top: 20px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	margin-left: 55px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: #757575;
+}
+
+.checkbox{
+	margin-right: 7px;
+	border: 2px solid #212121;
+	border-radius: 3px;
+	width: 16px;
+	height: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	background-color:#ffffff;
+	fill:#ffffff;
+}
+
+.svg-check{
+	display: flex;
+}
+
+.subscribe input:checked + label .checkbox{
+	background-color: var(--second-text-color);
+	border-color: var(--second-text-color);
+	fill: #FFFFFF;
+}
+
+.subscribe input:focus + label .checkbox{
+		border-color: var(--second-text-color);
+}
+
+.label-agree{
+	display: flex;
+	align-items: center;
+}
+
+.subscribe p{
+	margin-left: 7px;
+}
+
+.subscribe input{
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+
+.aferta{
+	text-decoration: underline;
+	color: var(--second-text-color);
+	margin-left: 2px;
+	
+}
+
+.aferta:focus{
+	outline: 1px solid black;
+}
+
+.form-item .hero-button{
+	outline: 0;
+	margin-top: 20px;
+	padding: 0;
+	width: 200px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.06em;
+	background-color: var(--second-text-color);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-item .hero-button:hover,
+.form-item .hero-button:focus{
+	outline: 1px solid var(--first-text-color);
+	color: var(--four-text-color);
+}
