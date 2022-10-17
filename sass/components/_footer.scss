@@ -1,20 +1,22 @@
 /* footer */
 
 .footer {
-	height: 250px;
+	// height: 250px;
 	background-color: var(--hero-text-color);
 	color: var(--four-text-color);
 	display: flex;
-	align-items: baseline;
+	flex-direction: column;
+	align-items: center;
 	padding: 0;
 
 }
 
 .footer-left-container{
 	display: flex;
-	margin-left: 215px;
+	align-items: center;
 	flex-direction: column;
 	width: 230px;
+	margin-top: 60px;
 }
 
 .footer-logo{
@@ -26,6 +28,7 @@
 .footer-alladress{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	margin-top: 20px;
 	width: 230px;
 	height: 80px;
@@ -66,7 +69,7 @@ address {
 	display: flex;
 	width: 205px;
 	height: 80px;
-	margin-left: 70px;
+	margin-top: 60px;
 	flex-direction: column;
 }
 
@@ -134,9 +137,12 @@ address {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
-	margin-left: 95px;
-	margin-top: 72px;
+	// margin-left: 95px;
+	margin-top: 60px;
+	padding-bottom: 60px;
 	background-color: #2F303A;
+	flex-direction: column;
+    align-items: center;
 }
 
 .footer-subscribe label{
@@ -154,7 +160,7 @@ address {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
-	width: 360px;
+	width: 435px;
 	height: 50px;
 	background-color: #2F303A;
 	font-weight: 400;
@@ -169,11 +175,13 @@ address {
 .email-form{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .footer-button{
-	margin-bottom: 1px;
-	margin-left: 15px;
+	// margin-bottom: 1px;
+	// margin-left: 15px;
+	margin-top: 20px;
 	width: 200px;
 	height: 50px;
 	font-weight: 700;
