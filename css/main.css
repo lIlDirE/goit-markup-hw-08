@@ -10,6 +10,7 @@
 * {
   text-decoration: none;
   outline: 0;
+  margin: 0;
 }
 
 ul,
@@ -41,12 +42,22 @@ img {
 }
 
 .container {
-  width: 480px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
+  }
 }
 
 .card-container {
@@ -70,14 +81,40 @@ img {
   width: 450px;
   height: 622px;
 }
+@media screen and (min-width: 768px) {
+  .card-container {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .card-container {
+    width: 270px;
+    height: 428px;
+  }
+}
 
 /* Site nav */
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid var(--four-text-color);
   height: 60px;
+  width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-container {
+    width: 1600px;
+  }
 }
 
 .header-svg {
@@ -108,6 +145,11 @@ img {
   padding: 16px 0;
   margin-right: 275px;
 }
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 90px;
+  }
+}
 
 .logo-web {
   font-family: "Raleway";
@@ -123,6 +165,11 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+}
 
 .header-menu_icon {
   display: -webkit-box;
@@ -131,13 +178,13 @@ img {
 }
 
 .nav-link {
-  display: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
   position: relative;
+  display: none;
 }
 .nav-link:hover, .nav-link:focus {
   color: var(--second-text-color);
@@ -169,6 +216,11 @@ img {
   color: var(--second-text-color);
   opacity: 1;
 }
+@media screen and (min-width: 768px) {
+  .nav-link {
+    display: block;
+  }
+}
 
 .contacts-ul {
   display: -webkit-box;
@@ -178,13 +230,67 @@ img {
 }
 
 .contacts-li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts-li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .contacts-li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contacts:hover, .header-contacts:focus {
+  color: var(--second-text-color);
+}
+
+.header-svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 320px;
+}
+
+.contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts-list:not(:first-child) {
   margin-left: 30px;
 }
 
@@ -192,7 +298,7 @@ img {
 .hero {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/hero-480-1x.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero-480-1x.jpg");
-  max-width: 480px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -270,7 +376,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
   height: 225px;
 }
 .main-about-li:not(:first-child) {
@@ -323,14 +428,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 450px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  padding-top: 10px;
+  padding: 10px 15px 0px 15px;
 }
 
 .ourteam {
+  min-width: 480px;
   margin-top: 95px;
   background-color: var(--four-text-color);
 }
@@ -360,7 +467,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 95px;
-  width: 450px;
+  min-width: 450px;
   height: 185px;
   margin-bottom: 95px;
 }
@@ -991,8 +1098,8 @@ address {
 
 .modal {
   position: fixed;
-  width: 530px;
-  height: 580px;
+  min-width: 450px;
+  min-height: 610px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -1050,16 +1157,16 @@ address {
 }
 
 .modal-title {
+  margin: auto;
+  width: 370px;
   margin-top: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   letter-spacing: 0.03em;
 }
 
@@ -1093,7 +1200,7 @@ textarea {
   border: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 450px;
+  width: 370px;
   height: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1154,7 +1261,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 55px;
+  margin-left: 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -1230,6 +1337,18 @@ textarea {
   text-decoration: underline;
   color: var(--second-text-color);
   margin-left: 2px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+}
+
+.aferta-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
 }
 
 .aferta:focus {

@@ -1,5 +1,6 @@
 .main-about {
 	display: block;
+	
 
 
 	&-ul{
@@ -11,7 +12,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 450px;
+		// width: 450px;
 		height: 225px;
 	}
 
@@ -30,6 +31,7 @@
 	}
 
 	&-text{
+		
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -50,11 +52,12 @@
 
 	&-p2{
 		display: flex;
+		width: 450px;
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 24px;
 		letter-spacing: 0.03em;
-		padding-top: 10px;
+		padding: 10px 15px 0px 15px;
 	}
 }
 
