@@ -5,10 +5,22 @@
 	background-color: var(--hero-text-color);
 	color: var(--four-text-color);
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
 	padding: 0;
 
+	@media screen and (min-width: 768px){
+		flex-direction: row;
+		align-items:baseline;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 1600px){
+		flex-direction: row;
+		align-items:baseline;
+		justify-content: flex-start;
+	}
 }
 
 .footer-left-container{
@@ -17,6 +29,14 @@
 	flex-direction: column;
 	width: 230px;
 	margin-top: 60px;
+
+
+	@media screen and (min-width: 1600px){
+		margin-left: 215px;
+		align-items: normal;
+	}
+
+
 }
 
 .footer-logo{
@@ -32,6 +52,13 @@
 	margin-top: 20px;
 	width: 230px;
 	height: 80px;
+
+	
+
+	@media screen and (min-width: 1600px){
+		align-items: normal;
+	}
+
 }
 
 address {
@@ -71,6 +98,13 @@ address {
 	height: 80px;
 	margin-top: 60px;
 	flex-direction: column;
+
+	@media screen and (min-width: 768px){
+		margin-left: 165px;
+	}
+	@media screen and (min-width: 1600px){
+		margin-left: 70px;
+	}
 }
 
 .footer-item-box{
@@ -135,14 +169,18 @@ address {
 
 .footer-subscribe{
 	display: flex;
-	flex-direction: row;
 	align-items: flex-end;
-	// margin-left: 95px;
 	margin-top: 60px;
 	padding-bottom: 60px;
 	background-color: #2F303A;
 	flex-direction: column;
     align-items: center;
+
+	@media screen and (min-width: 1600px){
+		margin-left: 95px;
+		flex-direction: row;
+		align-items: flex-end;
+	}
 }
 
 .footer-subscribe label{
@@ -179,8 +217,7 @@ address {
 }
 
 .footer-button{
-	// margin-bottom: 1px;
-	// margin-left: 15px;
+
 	margin-top: 20px;
 	width: 200px;
 	height: 50px;
@@ -198,6 +235,13 @@ address {
 	padding: 0;
 	fill: var(--four-text-color);
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	@media screen and (min-width: 1600px){
+
+		margin-bottom: 1px;
+		margin-left: 15px;
+	}
+
 
 	&__svg{
 		width: 24px;

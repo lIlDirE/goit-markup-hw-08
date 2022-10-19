@@ -21,11 +21,19 @@
 
 	&__ul {
 		display: flex;
-		width: 1170px;
+		min-width: 480px;
+
+		@media screen and (min-width: 768px){
+			min-width: 768px;
+		}
+
+		@media screen and (min-width: 1600px){
+			min-width: 1170px;
+		}
 	}
 
 	&__li {
-	gap: 30px;
+	
 	position: relative;
 	}
 
@@ -59,10 +67,22 @@
 
 
 .ourteam {
-	// height: 650px;
 	min-width: 480px;
-	margin-top: 95px;
+	margin-top: 60px;
+
 	background-color: var(--four-text-color);
+
+	@media screen and (min-width: 768px){
+		margin-top: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		min-height: 1285px;
+	}
+
+	@media screen and (min-width: 1600px){
+		margin-top: 95px;
+		min-height: 710px;
+	}
 
 	&__h2 {
 		padding-top: 60px;
@@ -97,16 +117,49 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		flex-wrap: wrap;
 		padding: 0;
 		justify-content: center;
+
+		@media screen and (min-width: 768px){
+			flex-direction: row;
+			width: 768px;
+			margin-left: auto;
+			margin-right: auto;
+			gap: 30px;
+		}
+		@media screen and (min-width: 1600px){
+			flex-direction: row;
+			width: 1600px;
+			margin-left: auto;
+			margin-right: auto;
+			gap: 0px;
+		}
 	}
 
+
+	
 	&__li:not(:first-child) {
 		margin-top: 30px;
+
+		@media screen and (min-width: 768px){
+			margin-top: 0px;
+		}
+		@media screen and (min-width: 1600px){
+			margin-left: 30px;
+		}
 	}
 
 	&__li:last-child{
 		margin-bottom: 30px;
+
+		@media screen and (min-width: 768px){
+			margin-bottom: 0px;
+			
+		}
+		@media screen and (min-width: 1600px){
+			margin-bottom: 0px;
+		}
 	}
 
 	&__h3{
@@ -117,6 +170,15 @@
 	&__thumb{
 		width: 450px;
 		height: 460px;
+
+		@media screen and (min-width: 768px){
+			width: 355px;
+			height: 375px;
+		}
+		@media screen and (min-width: 1600px){
+			width: 270px;
+			height: 260px;
+		}
 	}
 
 	&__thumb > img {
@@ -192,6 +254,16 @@
 	padding-bottom: 60px;
 	// margin-bottom: 95px;
 
+	@media screen and (min-width: 768px){
+		width: 740px;
+		height: 280px;
+	}
+	@media screen and (min-width: 1600px){
+		width: 1170px;
+		height: 185px;
+	}
+
+
 	&__h2 {
 		font-weight: 700;
 		font-size: 33px;
@@ -216,6 +288,15 @@
 		height: 90px;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		@media screen and (min-width: 768px){
+			width: 225px;
+			height: 90px;
+		}
+		@media screen and (min-width: 1600px){
+			width: 170px;
+			height: 90px;
+		}	
 	}
 
 	// &__li:not(:first-child) {
