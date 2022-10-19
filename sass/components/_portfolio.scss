@@ -1,19 +1,50 @@
 /* filter-buttons */
 
-.filter {
-	width: 575px;
-	display: flex;
-	align-items: center;
-	margin-top: 95px;
+.filter-box{
+	width: 480px;
 	margin-left: auto;
 	margin-right: auto;
-	justify-content: center;
-	gap: 8px;
+
+	@media screen and (min-width: 768px){
+		width: 768px;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 1600px){
+		margin-left: auto;
+		margin-right: auto;
+		width: 600px;
+		justify-content: center;
+	}
+}
+
+.filter {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 95px;
+	justify-content: normal;
+	width: 325px;
+	gap: 10px;
+
+	@media screen and (min-width: 768px){
+		width: 768px;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: 1600px){
+		margin-left: auto;
+		margin-right: auto;
+		width: 600px;
+		justify-content: center;
+	}
+	
 }
 
 .filter-buttons {
-	padding: 5px 20px;
+	padding: 6px 22px;
 	height: 40px;
+	margin-top: 15px;
 	box-sizing: border-box;
 	background: var(--four-text-color);
 	border-radius: 4px; 
@@ -25,6 +56,10 @@
 	color: var(--first-text-color);
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	@media screen and (min-width: 1600px){
+		margin-top: 0px;
+	}
 }
 
 .filter-buttons:hover,
@@ -40,8 +75,7 @@ address {
 /* portofolio.html galery*/
 
 .gallery-section {
-	width: 1170px;
-	height: 1360px;
+	width: 480px;
 	margin-left: auto;
 	margin-right: auto;
 	// padding: 0 15px;
@@ -50,19 +84,50 @@ address {
 	justify-content: flex-start;
 	gap: 30px;	
 	box-sizing: border-box;
+
+	@media screen and (min-width: 768px){
+		width: 768px;
+		padding: 0;
+	}
+
+	@media screen and (min-width: 1600px){
+		width: 1170px;
+		height: 1360px;
+		padding: 0;
+	}
 }
 
 .gallery {
-	padding-top: 35px;
-	padding-bottom: 95px;
-	margin-bottom: 95px;
+	padding: 35px 15px 0 15px;
+	padding-bottom: 60px;
+	margin-bottom: 0px;
+
+	@media screen and (min-width: 1600px){
+		margin-bottom: 95px;
+		padding: 0;
+		padding-top: 35px;
+	}
+
+
 }
 
 .gallery-item {
-	width: 370px;
-	height: 405px;
 	outline: 1px solid var(--four-text-color);
 	border-top: none;
+	width: 450px;
+	height: 405px;
+
+	@media screen and (min-width: 768px){
+		width: 354px;
+		height: 440px;
+	}
+
+	@media screen and (min-width: 1600px){
+		width: 370px;
+		height: 405px;
+
+	}
+
 }
 
 .gallery-item_thumb {
