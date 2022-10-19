@@ -145,12 +145,11 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header-logo {
-    padding-left: 200px;
+    margin-right: 90px;
   }
 }
 @media screen and (min-width: 1600px) {
   .header-logo {
-    margin-right: 90px;
     padding-left: 215px;
   }
 }
@@ -257,6 +256,11 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-li:not(:first-child) {
+    margin-top: 10px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .contacts-li:not(:first-child) {
     margin-left: 30px;
@@ -271,18 +275,30 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.02em;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: var(--third-text-color);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 .header-contacts:hover, .header-contacts:focus {
   color: var(--second-text-color);
@@ -307,16 +323,11 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacs-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1600px) {
   .contacs-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-left: 320px;
   }
 }
