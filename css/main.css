@@ -102,6 +102,10 @@ img {
   border: 1px solid var(--four-text-color);
   height: 60px;
   width: 480px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .header-container {
@@ -142,6 +146,10 @@ img {
   display: block;
   padding: 16px 0;
   margin-right: 275px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .header-logo {
@@ -168,6 +176,10 @@ img {
   line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1600px) {
   .logo-web {
@@ -200,6 +212,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--first-text-color);
   position: relative;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: none;
 }
 .nav-link:hover, .nav-link:focus {
@@ -231,6 +247,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
   opacity: 1;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .nav-link {
@@ -263,6 +283,12 @@ img {
   }
 }
 
+.contacts-li:not(:first-child) {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (min-width: 768px) {
   .contacts-li:not(:first-child) {
     margin-top: 10px;
@@ -328,6 +354,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .contacs-container {
@@ -348,6 +378,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1600px) {
   .contacts-list {
@@ -1006,25 +1040,33 @@ img {
 /* filter-buttons */
 .filter-box {
   width: 480px;
+  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition-duration: 550ms;
+          transition-duration: 550ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .filter-box {
+    padding-left: 0;
     width: 768px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transition-duration: 550ms;
+            transition-duration: 550ms;
   }
 }
 @media screen and (min-width: 1600px) {
   .filter-box {
-    margin-left: auto;
-    margin-right: auto;
     width: 600px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transition-duration: 550ms;
+            transition-duration: 550ms;
   }
 }
 
@@ -1037,15 +1079,20 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 95px;
+  margin-top: 60px;
   -webkit-box-pack: normal;
       -ms-flex-pack: normal;
           justify-content: normal;
   width: 325px;
   gap: 10px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .filter {
+    margin-top: 95px;
     width: 768px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1114,6 +1161,10 @@ address {
   gap: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .gallery-section {
@@ -1147,11 +1198,15 @@ address {
   border-top: none;
   width: 450px;
   height: 405px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .gallery-item {
     width: 354px;
-    height: 440px;
+    height: 404px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1164,6 +1219,32 @@ address {
 .gallery-item_thumb {
   position: relative;
   overflow: hidden;
+  width: 450px;
+  height: 294px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .gallery-item_thumb {
+    width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .gallery-item_thumb {
+    width: 370px;
+    height: 294px;
+  }
+}
+
+.gallery-item_thumb > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .gallery-item_description {
@@ -1194,6 +1275,7 @@ address {
 .gallery-item_link {
   display: block;
   height: 100%;
+  width: 100%;
 }
 
 .gallery-item_overlay {
@@ -2061,8 +2143,8 @@ textarea {
   padding: 40px;
   background-color: #fff;
   z-index: 999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
