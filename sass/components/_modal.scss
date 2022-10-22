@@ -51,7 +51,7 @@
 	height: 30px;
 	outline: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
-	background-color: var(--four-text-color);
+	background-color: #fff;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -62,7 +62,8 @@
 
 .close-button:hover,
 .close-button:focus{
-	background-color: var(--second-text-color);
+	fill: var(--second-text-color);
+	background-color: #fff;
 }
 
 

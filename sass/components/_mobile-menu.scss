@@ -123,7 +123,8 @@
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	padding: 40px;
+	box-sizing:border-box;
+	padding: 50px 40px;
 	background-color: #fff;
 	z-index: 999;
   
@@ -133,6 +134,20 @@
   
   .menu-container.is-open {
 	transform: translateX(0);
+  }
+
+  .menu-container-button-close{
+	width: 40px;
+	height: 40px;
+	background-color:#fff;
+	fill: var(--first-text-color);
+
+	&:hover,
+	&:focus{
+		fill: var(--second-text-color);
+		outline: 0;
+
+	}
   }
   
   .menu-container .menu-toggle {

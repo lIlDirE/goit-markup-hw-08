@@ -1745,7 +1745,7 @@ address {
   height: 30px;
   outline: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: var(--four-text-color);
+  background-color: #fff;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1764,7 +1764,8 @@ address {
 
 .close-button:hover,
 .close-button:focus {
-  background-color: var(--second-text-color);
+  fill: var(--second-text-color);
+  background-color: #fff;
 }
 
 .modal-title {
@@ -2165,7 +2166,9 @@ textarea {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 50px 40px;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(200%);
@@ -2179,6 +2182,17 @@ textarea {
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.menu-container-button-close {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  fill: var(--first-text-color);
+}
+.menu-container-button-close:hover, .menu-container-button-close:focus {
+  fill: var(--second-text-color);
+  outline: 0;
 }
 
 .menu-container .menu-toggle {
