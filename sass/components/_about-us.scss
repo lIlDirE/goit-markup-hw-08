@@ -8,7 +8,7 @@
 	margin-top: 95px;
 	width: 1170px;
 	height: 385px;
-	margin-bottom: 95px;
+	// padding-bottom: 95px;
 
 	&__h2 {
 		font-weight: 700;
@@ -165,6 +165,11 @@
 	&__h3{
 		margin-top: 30px;
 		margin-bottom: 10px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		letter-spacing: 0.03em;
 	}
 
 	&__thumb{
@@ -252,15 +257,16 @@
 	width: 450px;
 	height: 400px;
 	padding-bottom: 60px;
-	// margin-bottom: 95px;
 
 	@media screen and (min-width: 768px){
 		width: 740px;
 		height: 280px;
 	}
 	@media screen and (min-width: 1200px){
+		margin-top: 95px;
 		width: 1170px;
 		height: 185px;
+		padding-bottom: 95px;
 	}
 
 
@@ -271,6 +277,10 @@
 		display: flex;
 		justify-content: center;
 		margin-bottom: 30px;
+
+		@include desktop{
+			margin-bottom: 50px;
+		}
 	}
 
 	&__clients{
