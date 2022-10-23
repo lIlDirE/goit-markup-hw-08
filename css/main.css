@@ -170,6 +170,21 @@ img {
   color: var(--second-text-color);
 }
 
+.current::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(32px);
+          transform: translateY(32px);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--second-text-color);
+  opacity: 1;
+}
+
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -255,7 +270,6 @@ img {
   color: var(--second-text-color);
 }
 .nav-link::after {
-  opacity: 1;
   content: "";
   display: block;
   position: absolute;
