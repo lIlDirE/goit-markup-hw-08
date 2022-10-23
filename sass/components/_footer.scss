@@ -27,10 +27,17 @@
 	flex-direction: column;
 	align-items: center;
 	margin-top: 60px;
+	margin-bottom: 0;
 
 	@include tablet{
+		
+	align-items: normal;	
 		flex-direction: row;
 	}	
+	@include desktop{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
 }
 
 .footer-left-container{
@@ -45,10 +52,9 @@
 	// 	padding-left: 115px;
 	// }
 
-	// @media screen and (min-width: 1200px){
-	// 	// margin-left: 215px;
-	// 	align-items: normal;
-	// }
+	@media screen and (min-width: 1200px){
+		align-items: flex-start
+	}
 
 }
 
@@ -66,9 +72,9 @@
 
 	
 
-	// @media screen and (min-width: 1200px){
-	// 	align-items: normal;
-	// }
+	@media screen and (min-width: 1200px){
+		align-items: flex-start;
+	}
 
 }
 
@@ -97,6 +103,10 @@ address {
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
+
+	@include desktop{
+		justify-content: flex-start;
+	}
 }
 
 
@@ -112,18 +122,19 @@ address {
 
 .connect{
 	display: flex;
-	width: 205px;
+	min-width: 205px;
 	height: 80px;
 	margin-top: 60px;
 	padding-left: 0px;
 	flex-direction: column;
 
 	@include tablet{
-		margin-top: 0;
+		margin-top: 5px;
 		padding-left: 165px;
 	}
 
 	@media screen and (min-width: 1200px){
+		margin-top: 5px;
 		padding-left: 70px;
 	}
 }
@@ -197,18 +208,22 @@ address {
 }
 
 .footer-subscribe{
+	height: 155px;
 	display: flex;
-	align-items: flex-end;
 	margin-top: 60px;
-	padding-bottom: 60px;
+	margin-bottom: 0px;
 	background-color: #2F303A;
 	flex-direction: column;
     align-items: center;
 
 	@media screen and (min-width: 1200px){
+		height: 85px;
+		margin-top: 0px;
 		margin-left: 90px;
 		flex-direction: row;
 		align-items: flex-end;
+		margin-top: 70px;
+		margin-bottom: 95px;
 	}
 }
 
@@ -237,9 +252,10 @@ address {
 	align-items: center;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
+	box-sizing: border-box;
 
 	@include desktop{
-		width: 360px;
+		width: 358px;
 	}
 }
 
