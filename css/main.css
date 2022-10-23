@@ -1441,6 +1441,9 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     min-height: 255px;
     -webkit-box-align: normal;
         -ms-flex-align: normal;
@@ -1713,7 +1716,7 @@ address {
   .footer-subscribe {
     height: 85px;
     margin-top: 0px;
-    margin-left: 90px;
+    margin-left: 95px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
