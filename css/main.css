@@ -100,9 +100,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid var(--four-text-color);
   height: 60px;
   min-width: 480px;
@@ -152,8 +152,19 @@ img {
   display: flex;
   height: 100%;
   width: 100%;
+  margin-right: 275px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    margin-right: 315px;
+  }
 }
 
 .header-nav-ul {
@@ -201,11 +212,6 @@ img {
 @media screen and (min-width: 768px) {
   .header-logo {
     margin-right: 90px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header-logo {
-    padding-left: 199px;
   }
 }
 
@@ -402,11 +408,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 0px;
-}
-@media screen and (min-width: 1200px) {
-  .contacs-container {
-    padding-right: 199px;
-  }
 }
 
 .contacts-list {
@@ -2154,7 +2155,6 @@ textarea {
 }
 
 .menu-button {
-  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
