@@ -39,6 +39,7 @@ textarea {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .container {
@@ -912,13 +913,6 @@ img {
     width: 270px;
     height: 260px;
   }
-}
-.ourteam__thumb > img {
-  display: block;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .ourteam__p {
   font-weight: 400;

@@ -185,13 +185,26 @@
 			height: 260px;
 		}
 	}
+	// &__thumb > &__picture{
+	// 	display: block;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	object-fit: cover;
+	// }
 
-	&__thumb > img {
-		display: block;
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
-	  }
+	// &__thumb > img {
+	// 	display: block;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	object-fit: cover;
+	//   }
+	//   &__thumb > wepb {
+	// 	display: block;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	object-fit: cover;
+	//   }
+
 
 	&__p{
 		font-weight: 400;
