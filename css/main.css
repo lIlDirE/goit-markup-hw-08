@@ -464,8 +464,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 360px;
-  min-height: 85px;
+  width: 360px;
+  height: 85px;
 }
 @media screen and (min-width: 1200px) {
   .hero-text {
@@ -2169,8 +2169,43 @@ textarea {
   padding-top: 300px;
 }
 
+.mobile-menu-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mobile-menu-bottom-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
 .mobile-menu-contacts {
-  margin-top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mobile-menu__contacts:not(:first-child) {
@@ -2221,6 +2256,16 @@ textarea {
   color: var(--second-text-color);
 }
 
+.mobile-menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .mobile-menu-nav .link:hover,
 .mobile-menu-nav .link:focus {
   color: var(--second-text-color);
@@ -2258,11 +2303,14 @@ textarea {
 }
 
 .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 50px 40px;

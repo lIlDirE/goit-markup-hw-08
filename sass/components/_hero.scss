@@ -60,8 +60,8 @@
 
 	&-text {
 		display: flex;
-		min-width: 360px;
-		min-height: 85px;
+		width: 360px;
+		height: 85px;
 
 
 		@include desktop{
