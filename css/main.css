@@ -1052,10 +1052,16 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .ourpartners__h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
     margin-bottom: 50px;
   }
 }
