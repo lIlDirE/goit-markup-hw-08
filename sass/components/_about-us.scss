@@ -72,6 +72,7 @@
 .ourteam {
 	margin-top: 60px;
 	background-color: var(--four-text-color);
+	min-width: 480px;
 
 	@include mobile{
 		min-width: 480px;

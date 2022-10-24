@@ -1,5 +1,6 @@
 .main-about {
 	display: block;
+	min-width: 480px;
 
 	&-ul{
 		display: flex;
@@ -34,6 +35,7 @@
 		align-items: center;
 		height: 225px;
 		transition-duration: 250ms;
+		// min-height: 320px;
 
 		@media screen and (min-width: 768px){
 			width: 355px;

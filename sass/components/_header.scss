@@ -2,27 +2,26 @@
 
 .header-container {
 	display: flex;
-	justify-content: center;
+	box-sizing: bordered-box;
+	justify-content: space-between;
 	border: 1px solid var(--four-text-color);
 	height: 60px;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	min-width: 480px;
 
 	@include mobile{
-		min-width: 320px;
-		max-width: 480px;
+		min-width: 480px;
 		display: flex;
 		justify-content: center;
 	}
 
 	@media screen and (min-width: 768px){
-		min-width: 768px;
-		max-width: 1199px;
 		height: 80px;
 	}
 
 	@media screen and (min-width: 1200px){
-		min-width: 1200px;
+
 		max-width: 1600px;
 	}
 }
@@ -42,8 +41,11 @@
 	display: flex;
 	height: 100%;
 	width: 100%;
-	margin-right: 275px;
 	box-sizing:border-box;
+
+	@include mobile{
+		margin-right: 275px;
+	}
 
 	@include tablet{
 		margin-right: 87px;
