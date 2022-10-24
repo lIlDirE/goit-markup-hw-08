@@ -44,9 +44,15 @@
   .mobile-menu-bottom-block{
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	box-sizing:content-box;
 	justify-content: flex-end;
-	width: 100%;
+	width: 50%;
+
+	@include mobile{
+		width: 100%;	
+	}
+
   }
   .mobile-menu-contacts{
 	display: flex;
@@ -76,11 +82,12 @@
 .mobile-menu-social{
 	margin-top: 65px;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .mobile-menu__social a{
 	padding-right: 10px;
-	
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 22px;

@@ -1,26 +1,29 @@
 /* filter-buttons */
 
 .filter-box{
-	padding-left: 15px;
+	width: 320px;
+	display: flex;
 	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+	justify-content: center;
 	transition-duration: 550ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 	@include mobile{
 		width: 480px;
+		padding-left: 15px;
 	}
 
 	@media screen and (min-width: 768px){
 		padding-left: 0;
 		width: 768px;
-		justify-content: center;
+		// justify-content: center;
 		transition-duration: 550ms;
 	}
 
 	@media screen and (min-width: 1200px){
 		width: 600px;
-		justify-content: center;
+		// justify-content: center;
 		transition-duration: 550ms;
 	}
 }
@@ -31,7 +34,8 @@
 	align-items: center;
 	margin-top: 60px;
 	justify-content: normal;
-	width: 325px;
+	width: 100vw;
+	min-width: 320px;
 	gap: 10px;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -85,7 +89,7 @@ address {
 /* portofolio.html galery*/
 
 .gallery-section {
-	width: 480px;
+	min-width: 320px;
 	margin-left: auto;
 	margin-right: auto;
 	// padding: 0 15px;
@@ -114,9 +118,12 @@ address {
 }
 
 .gallery {
-	padding: 35px 15px 0 15px;
-	padding-bottom: 60px;
+	padding: 35px 0px 60px 0px;
 	margin-bottom: 0px;
+
+	@include mobile{
+		padding: 35px 15px 60px 15px;
+	}
 
 	@media screen and (min-width: 1200px){
 		margin-bottom: 95px;
@@ -130,10 +137,15 @@ address {
 .gallery-item {
 	outline: 1px solid var(--four-text-color);
 	border-top: none;
-	width: 450px;
-	height: 405px;
+	min-width: 320px;
+	// height: 405px;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	@include mobile{
+		width: 450px;
+		height: 405px;		
+	}
 
 	@media screen and (min-width: 768px){
 		width: 354px;
@@ -150,10 +162,15 @@ address {
 .gallery-item_thumb{
     position: relative;
 	overflow: hidden;
-	width: 450px;
-	height: 294px;
+	width: 100vw;
+	height: auto;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	@include mobile{
+		width: 450px;
+		height: 294px;
+	}
 
 	@media screen and (min-width: 768px){
 		width: 354px;

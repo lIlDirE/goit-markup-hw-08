@@ -72,7 +72,7 @@
 .ourteam {
 	margin-top: 60px;
 	background-color: var(--four-text-color);
-	min-width: 480px;
+	min-width: 320px;
 
 	@include mobile{
 		min-width: 480px;
@@ -179,8 +179,14 @@
 	}
 
 	&__thumb{
-		width: 450px;
-		height: 460px;
+		width: 100vw;
+		height: auto	;
+		object-fit: cover;
+
+		@media screen and (min-width: 450px){
+			width: 450px;
+			height: 460px;
+		}
 
 		@media screen and (min-width: 768px){
 			width: 355px;
@@ -237,6 +243,11 @@
 	&-item-link{
 		display: flex;
 		margin-top: 15px;
+		padding-bottom: 25px;
+
+		@include mobile{
+			padding-bottom: 0;
+		}
 	}
 
 	&-svg{
@@ -273,9 +284,12 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 60px;
-	width: 450px;
-	height: 400px;
 	padding-bottom: 60px;
+
+	@include mobile{
+		width: 450px;
+		height: 400px;
+	}
 
 	@media screen and (min-width: 768px){
 		width: 740px;
@@ -311,6 +325,7 @@
 	&__clients{
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		align-items: center;
 		margin-left: auto;
 		margin-right: auto;
@@ -323,6 +338,11 @@
 		height: 90px;
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		@include mobile{
+			width: 210px;
+			height: 90px;
+		}
 
 		@media screen and (min-width: 768px){
 			width: 225px;
