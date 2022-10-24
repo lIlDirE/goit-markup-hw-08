@@ -1104,6 +1104,26 @@ img {
   outline: 0;
 }
 
+.ourpartners-container {
+  display: block;
+  min-width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .ourpartners-container {
+    min-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .ourpartners-container {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ourpartners-container {
+    min-width: 1170px;
+  }
+}
+
 .ourpartners {
   margin-left: auto;
   margin-right: auto;

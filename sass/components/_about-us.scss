@@ -279,6 +279,22 @@
 	}
 }
 
+.ourpartners-container{
+	display: block;
+	min-width: 320px;
+
+	@include mobile{
+		min-width: 480px;
+	}
+
+	@include tablet{
+		min-width: 768px;
+	}
+
+	@include desktop{
+		min-width: 1170px;
+	}
+}
 
 .ourpartners {
 	margin-left: auto;
