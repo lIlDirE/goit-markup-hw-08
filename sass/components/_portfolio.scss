@@ -4,7 +4,7 @@
 	width: 320px;
 	display: flex;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	justify-content: center;
 	transition-duration: 550ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -17,13 +17,12 @@
 	@media screen and (min-width: 768px){
 		padding-left: 0;
 		width: 768px;
-		// justify-content: center;
+
 		transition-duration: 550ms;
 	}
 
 	@media screen and (min-width: 1200px){
 		width: 600px;
-		// justify-content: center;
 		transition-duration: 550ms;
 	}
 }
@@ -37,6 +36,7 @@
 	width: 100vw;
 	min-width: 320px;
 	gap: 10px;
+	padding-left: 15px;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -92,14 +92,12 @@ address {
 	min-width: 320px;
 	margin-left: auto;
 	margin-right: auto;
-	// padding: 0 15px;
+	padding: 0 15px;
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
-	justify-content: flex-start;
 	gap: 30px;	
 	box-sizing: border-box;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 	@include mobile{
 		width: 480px;
@@ -137,7 +135,9 @@ address {
 .gallery-item {
 	outline: 1px solid var(--four-text-color);
 	border-top: none;
-	min-width: 320px;
+	min-width: 290px;
+	// padding-left: 15px;
+	// padding-right: 15px;
 	// height: 405px;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -162,10 +162,12 @@ address {
 .gallery-item_thumb{
     position: relative;
 	overflow: hidden;
-	width: 100vw;
+	// width: 100vw;
+	width: 100%;
 	height: auto;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	// border: 1px solid red;
 
 	@include mobile{
 		width: 450px;

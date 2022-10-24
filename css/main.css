@@ -84,10 +84,10 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 100vw;
+  width: calc(100% - 30px);
   height: auto;
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .card-container {
     width: 450px;
     height: 622px;
@@ -616,7 +616,7 @@ img {
           align-items: center;
   margin: auto;
   margin-top: 60px;
-  width: 100vw;
+  min-width: 300px;
 }
 @media screen and (min-width: 480px) {
   .main-about-ul {
@@ -651,14 +651,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 225px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  width: 100vw;
+  min-width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .main-about-li {
+    min-height: 226px;
+  }
 }
 @media screen and (min-width: 768px) {
   .main-about-li {
-    width: 355px;
+    min-width: 355px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -666,8 +670,9 @@ img {
     -webkit-box-pack: normal;
         -ms-flex-pack: normal;
             justify-content: normal;
+    min-width: 270px;
     width: 270px;
-    height: 250px;
+    min-height: 250px;
   }
 }
 .main-about-li:not(:first-child) {
@@ -693,7 +698,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
+  width: calc(100% - 30px);
   height: 120px;
   background-color: var(--four-text-color);
   border-radius: 4px;
@@ -728,8 +733,24 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
+  width: calc(100% - 30px);
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .main-about-text {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-about-text {
+    width: 355px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-about-text {
+    text-align: start;
+    width: 270px;
+  }
 }
 .main-about-h2 {
   display: -webkit-box;
@@ -747,7 +768,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-top: 30px;
-  width: 100vw;
+  width: calc(100% - 30px);
 }
 @media screen and (min-width: 480px) {
   .main-about-h2 {
@@ -768,11 +789,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100vw;
+  width: calc(100% - 30px);
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  padding-top: 10px;
   color: var(--third-text-color);
 }
 @media screen and (min-width: 480px) {
@@ -1009,14 +1031,14 @@ img {
   letter-spacing: 0.03em;
 }
 .ourteam__thumb {
-  width: 100vw;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .ourteam__thumb {
-    width: 450px;
+    width: 100%;
     height: 460px;
   }
 }
@@ -1031,6 +1053,19 @@ img {
     width: 270px;
     height: 260px;
   }
+}
+.ourteam__thumb > .ourteam__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.ourteam picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  width: 100%;
 }
 .ourteam__p {
   font-weight: 400;
@@ -1309,6 +1344,7 @@ img {
   width: 100vw;
   min-width: 320px;
   gap: 10px;
+  padding-left: 15px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1374,21 +1410,18 @@ address {
   min-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   gap: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
   .gallery-section {
@@ -1429,7 +1462,7 @@ address {
 .gallery-item {
   outline: 1px solid var(--four-text-color);
   border-top: none;
-  min-width: 320px;
+  min-width: 290px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1457,7 +1490,7 @@ address {
 .gallery-item_thumb {
   position: relative;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: auto;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -2407,7 +2440,7 @@ textarea {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 50%;
+  padding-left: 10px;
 }
 @media screen and (min-width: 480px) {
   .mobile-menu-bottom-block {
@@ -2474,6 +2507,15 @@ textarea {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.mobile-menu__social:last-child {
+  padding-top: 10px;
+}
+@media screen and (min-width: 380px) {
+  .mobile-menu__social:last-child {
+    padding-top: 0px;
+  }
+}
+
 .mobile-menu .link {
   color: var(--second-text-color);
 }
@@ -2486,6 +2528,12 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 10px;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu-nav {
+    padding-left: 0px;
+  }
 }
 
 .mobile-menu-nav .link:hover,
@@ -2535,7 +2583,7 @@ textarea {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 50px 40px;
+  padding: 50px 0;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(200%);
@@ -2544,6 +2592,11 @@ textarea {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+@media screen and (min-width: 480px) {
+  .menu-container {
+    padding: 50px 40px;
+  }
 }
 
 .menu-container.is-open {

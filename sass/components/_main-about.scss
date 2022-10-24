@@ -11,7 +11,7 @@
 		align-items: center;
 		margin: auto;
 		margin-top: 60px;
-		width: 100vw;
+		min-width: 300px;
 
 		@include mobile{
 			min-width: 480px;
@@ -34,17 +34,23 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 225px;
 		transition-duration: 250ms;
-		width: 100vw;
+		min-width: 320px;
+		// width: 320px;
+
+		@include mobile{
+			min-height: 226px;
+		}
 
 		@media screen and (min-width: 768px){
-			width: 355px;
+			min-width: 355px;
+			// width: 355px;
 		}
 		@media screen and (min-width: 1200px){
 			justify-content: normal;
+			min-width: 270px;
 			width: 270px;	
-			height: 250px;
+			min-height: 250px;
 		}
 	}
 
@@ -63,7 +69,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 100vw;
+		width: calc(100% - 30px);
 		height: 120px;
 		background-color: var(--four-text-color);
 		border-radius: 4px;
@@ -85,8 +91,20 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 100vw;
+		width: calc(100% - 30px);
 		text-align: center;
+
+		@include mobile{
+			width: 450px;
+		}
+
+		@include tablet{
+			width: 355px;
+		}
+		@include desktop{
+			text-align: start;
+			width: 270px;
+		}
 	}
 
 	&-h2{
@@ -100,7 +118,7 @@
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		padding-top: 30px;
-		width: 100vw;
+		width: calc(100% - 30px);
 
 		@include mobile{
 			width: 355px;
@@ -116,12 +134,13 @@
 
 	&-p2{
 		display: flex;
-		width: 100vw;
+		width: calc(100% - 30px);
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 24px;
 		letter-spacing: 0.03em;
 		// padding: 10px 15px 0px 15px;
+		padding-top: 10px;
 		color: var(--third-text-color);
 
 		@include mobile{
